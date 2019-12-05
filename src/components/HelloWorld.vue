@@ -1,20 +1,6 @@
 <template>
   <div class="hello">
-    <van-tabbar route>
-      <van-tabbar-item 
-        replace
-        to="/home"
-        icon="home-o">
-        标签
-      </van-tabbar-item>
-      <van-tabbar-item 
-        replace
-        to="/about"
-        icon="home-o"
-      >
-        关于
-      </van-tabbar-item>
-    </van-tabbar>
+    <GlobalFooter />
     <h1>{{ msg }}</h1>
     <van-button type="default">默认按钮</van-button>
     <van-button type="primary">主要按钮</van-button>
@@ -53,8 +39,13 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import GlobalFooter from '@/components/GlobalFooter/GlobalFooter.vue';
 
-@Component
+@Component({
+  components: {
+    GlobalFooter
+  }
+})
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
 }
