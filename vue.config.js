@@ -12,7 +12,7 @@ module.exports = {
                 modifyVars: {
                   // 直接覆盖变量
                   red: '#03a9f4',
-                  blue: '#3eaf7c',
+                  blue: '#b30101',
                   orange: '#f08d49',
                   'text-color': '#111',
                   'border-color': '#eee'

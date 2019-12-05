@@ -1,6 +1,26 @@
 <template>
   <div class="hello">
+    <van-tabbar route>
+      <van-tabbar-item 
+        replace
+        to="/home"
+        icon="home-o">
+        标签
+      </van-tabbar-item>
+      <van-tabbar-item 
+        replace
+        to="/about"
+        icon="home-o"
+      >
+        关于
+      </van-tabbar-item>
+    </van-tabbar>
     <h1>{{ msg }}</h1>
+    <van-button type="default">默认按钮</van-button>
+    <van-button type="primary">主要按钮</van-button>
+    <van-button type="info">信息按钮</van-button>
+    <van-button type="warning">警告按钮</van-button>
+    <van-button type="danger">危险按钮</van-button>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the

@@ -6,7 +6,7 @@ import Vant from 'vant'
 
 Vue.config.productionTip = false
 
-import 'vant/lib/button/style/less'
+import 'vant/lib/index.less'
 
 Vue.use(Vant)
 
