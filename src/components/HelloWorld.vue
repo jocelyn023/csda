@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <GlobalFooter />
+    <NewsList :id="111" />
     <h1>{{ msg }}</h1>
     <van-button type="default">默认按钮</van-button>
     <van-button type="primary">主要按钮</van-button>
@@ -40,10 +41,12 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import GlobalFooter from '@/components/GlobalFooter/GlobalFooter.vue';
+import NewsList from '@/components/NewsList/NewsList.vue';
 
 @Component({
   components: {
-    GlobalFooter
+    GlobalFooter,
+    NewsList
   }
 })
 export default class HelloWorld extends Vue {
